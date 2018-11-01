@@ -17,8 +17,13 @@ public class Sentence implements Serializable
     @SerializedName("url")
     @Expose
     private String url;
-
-    private final static long serialVersionUID = 665150296946841891L;
+    @SerializedName("title")
+    @Expose
+    private String title;
+    @SerializedName("description")
+    @Expose
+    private String description;
+    private final static long serialVersionUID = -4828783025774109962L;
 
     /**
      * No args constructor for use in serialization
@@ -29,13 +34,17 @@ public class Sentence implements Serializable
 
     /**
      *
+     * @param title
+     * @param description
      * @param original
      * @param url
      */
-    public Sentence(String original, String url) {
+    public Sentence(String original, String url, String title, String description) {
         super();
         this.original = original;
         this.url = url;
+        this.title = title;
+        this.description = description;
     }
 
     public String getOriginal() {
@@ -64,14 +73,40 @@ public class Sentence implements Serializable
         return this;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public Sentence withTitle(String title) {
+        this.title = title;
+        return this;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Sentence withDescription(String description) {
+        this.description = description;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("original", original).append("url", url).toString();
+        return new ToStringBuilder(this).append("original", original).append("url", url).append("title", title).append("description", description).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(original).append(url).toHashCode();
+        return new HashCodeBuilder().append(title).append(description).append(original).append(url).toHashCode();
     }
 
     @Override
@@ -83,7 +118,7 @@ public class Sentence implements Serializable
             return false;
         }
         Sentence rhs = ((Sentence) other);
-        return new EqualsBuilder().append(original, rhs.original).append(url, rhs.url).isEquals();
+        return new EqualsBuilder().append(title, rhs.title).append(description, rhs.description).append(original, rhs.original).append(url, rhs.url).isEquals();
     }
 
 }
