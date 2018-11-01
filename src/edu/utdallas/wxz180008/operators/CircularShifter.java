@@ -1,6 +1,7 @@
 package edu.utdallas.wxz180008.operators;
 
 import edu.utdallas.wxz180008.models.Sentence;
+import edu.utdallas.wxz180008.util.StopWordsDictionary;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,6 +34,8 @@ public final class CircularShifter {
         List<Sentence> shiftedSentences = new ArrayList<>();
 
         for (int counter = 0; counter < words.length; counter++) {
+            if (StopWordsDictionary.getInstance().getNoises().contains(words[counter])) continue;
+
             StringBuilder shiftedPermutation = new StringBuilder();
             int cursor = counter;
             int len = 0;
@@ -43,7 +46,7 @@ public final class CircularShifter {
                 len++;
             }
 
-            shiftedSentences.add(new Sentence(shiftedPermutation.toString().trim(), sentence.getUrl()));
+            shiftedSentences.add(new Sentence(shiftedPermutation.toString().trim(), sentence.getUrl(), sentence.getTitle(), sentence.getDescription()));
         }
 
         sentences.addAll(shiftedSentences);

@@ -6,9 +6,7 @@ import edu.utdallas.wxz180008.models.Sentence;
 import java.util.List;
 
 public class CoogleRepository {
-    private static final String TABLE_NAME = "books";
-
-    private static final String TABLE_NAME_BY_TITLE = TABLE_NAME + "ByTitle";
+    private static final String TABLE_NAME = "indices";
 
     private Session session;
 
@@ -22,22 +20,22 @@ public class CoogleRepository {
      * @param sentences
      */
     public void insertSentencesBatch(List<Sentence> sentences) {
-        StringBuilder sb = new StringBuilder("BEGIN BATCH ");
-
         for (Sentence sentence : sentences) {
-            sb.append("INSERT INTO ").append(TABLE_NAME)
-                    .append("(idx, clicks, description, title, url) ")
-                    .append("VALUES (")
-                        .append(sentence.getOriginal()).append(", '")
-                        .append(0).append("', '")
-                        .append(sentence.getDescription()).append("', '")
-                        .append(sentence.getTitle()).append("', '")
-                        .append(sentence.getUrl()).append("');");
+            insertSentence(sentence);
         }
+    }
 
-        sb.append("APPLY BATCH;");
+    public void insertSentence(Sentence sentence) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("INSERT INTO ").append(TABLE_NAME)
+                .append("(idx, clicks, description, title, url) ")
+                .append("VALUES ('")
+                .append(sentence.getOriginal()).append("', ")
+                .append(0).append(", '")
+                .append(sentence.getDescription()).append("', '")
+                .append(sentence.getTitle()).append("', '")
+                .append(sentence.getUrl()).append("');");
 
         session.execute(sb.toString());
     }
-
 }
