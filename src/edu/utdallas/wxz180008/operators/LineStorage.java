@@ -35,4 +35,8 @@ public final class LineStorage {
         this.sentences.addAll(sentences);
     }
 
+    public static void deleteInstance() {
+        instance.sentences = null;
+        instance = null;
+    }
 }

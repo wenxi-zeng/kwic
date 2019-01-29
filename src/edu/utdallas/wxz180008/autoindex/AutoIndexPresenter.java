@@ -8,6 +8,7 @@ import edu.utdallas.wxz180008.data.SchemaRepository;
 import edu.utdallas.wxz180008.models.Sentence;
 import edu.utdallas.wxz180008.operators.BaseProcessAlgorithm;
 import edu.utdallas.wxz180008.operators.BatchProcess;
+import edu.utdallas.wxz180008.util.CassandraHelper;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
 
@@ -59,6 +60,8 @@ public class AutoIndexPresenter implements AutoIndexContract.Presenter, BaseProc
         Reader in = new FileReader(filename);
         Iterable<CSVRecord> records = CSVFormat.RFC4180.parse(in);
         for (CSVRecord record : records) {
+            if (record.size() < 3) continue;
+
             Sentence sentence = new Sentence()
                     .withUrl(record.get(0))
                     .withOriginal(record.get(1))
@@ -91,7 +94,7 @@ public class AutoIndexPresenter implements AutoIndexContract.Presenter, BaseProc
         view.showAlphabetizedSentences(sentences);
 
         CassandraConnector connector = new CassandraConnector();
-        connector.connect("10.176.128.241", 8081);
+        connector.connect(CassandraHelper.getInstance().getIp(), CassandraHelper.getInstance().getPort());
         Session session = connector.getSession();
 
         SchemaRepository sr = new SchemaRepository(session);

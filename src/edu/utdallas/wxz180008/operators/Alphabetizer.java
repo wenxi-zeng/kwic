@@ -37,4 +37,9 @@ public final class Alphabetizer{
     public List<Sentence> getSentences() {
         return sentences;
     }
+
+    public static void deleteInstance() {
+        instance.sentences = null;
+        instance = null;
+    }
 }

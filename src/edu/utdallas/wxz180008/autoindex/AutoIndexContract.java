@@ -21,6 +21,8 @@ public interface AutoIndexContract {
 
         void init();
 
+        void reset();
+
     }
 
     interface Presenter extends BasePresenter {

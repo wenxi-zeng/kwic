@@ -7,18 +7,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="081b92df-baf3-4a8d-84d7-130ece8d2c71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_commons_commons_csv_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/commons-csv-1.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/filters.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/utdallas/wxz180008/Kwic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexContract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/utdallas/wxz180008/util/StopWordsDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_commons_commons_io_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/cassandra.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/utdallas/wxz180008/util/CassandraHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/utdallas/wxz180008/util/ConfigHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/kwic_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/kwic_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kwic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/kwic.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/kwic_jar/kwic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/kwic_jar/kwic.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/kwic_jar/kwic.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kwic/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/kwic/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kwic/edu/utdallas/wxz180008/models/Sentence.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/kwic/edu/utdallas/wxz180008/models/Sentence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kwic/edu/utdallas/wxz180008/operators/Alphabetizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/kwic/edu/utdallas/wxz180008/operators/Alphabetizer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kwic/edu/utdallas/wxz180008/operators/CircularShifter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/kwic/edu/utdallas/wxz180008/operators/CircularShifter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kwic/edu/utdallas/wxz180008/operators/LineStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/kwic/edu/utdallas/wxz180008/operators/LineStorage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/utdallas/wxz180008/Kwic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/utdallas/wxz180008/Kwic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/utdallas/wxz180008/data/CoogleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/utdallas/wxz180008/data/CoogleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/utdallas/wxz180008/operators/Alphabetizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/utdallas/wxz180008/operators/Alphabetizer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/utdallas/wxz180008/operators/CircularShifter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/utdallas/wxz180008/operators/CircularShifter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/utdallas/wxz180008/operators/LineStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/utdallas/wxz180008/operators/LineStorage.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,12 +43,14 @@
     <session id="-1962735408">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="17" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.4" value="5" />
+          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -44,69 +58,63 @@
           <entry key="csv" value="1" />
           <entry key="form" value="1" />
           <entry key="iml" value="1" />
-          <entry key="java" value="72" />
-          <entry key="properties" value="2" />
-          <entry key="xml" value="2" />
+          <entry key="java" value="86" />
+          <entry key="properties" value="9" />
+          <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="GUI_DESIGNER_FORM" value="1" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="72" />
+          <entry key="JAVA" value="86" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="2" />
-          <entry key="XML" value="2" />
+          <entry key="Properties" value="9" />
+          <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="7" />
-          <entry key="java" value="4351" />
-          <entry key="properties" value="7" />
-          <entry key="txt" value="47" />
+          <entry key="java" value="5236" />
+          <entry key="properties" value="66" />
+          <entry key="txt" value="67" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4351" />
-          <entry key="PLAIN_TEXT" value="54" />
-          <entry key="Properties" value="7" />
+          <entry key="JAVA" value="5236" />
+          <entry key="PLAIN_TEXT" value="74" />
+          <entry key="Properties" value="66" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/operators/CircularShifter.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/cassandra.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="22">
+              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/models/Sentence.java">
+        <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/util/StopWordsDictionary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="88">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/operators/Alphabetizer.java">
+        <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/data/CassandraConnector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="31" />
+            <state relative-caret-position="88">
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,8 +125,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexPresenter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="63" column="48" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
+            <state relative-caret-position="1606">
+              <caret line="95" selection-start-line="95" selection-end-line="104" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/data/CoogleRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/operators/Alphabetizer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="770">
+              <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,13 +156,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/data/CoogleRepository.java">
+        <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/operators/CircularShifter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="38" column="39" lean-forward="true" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="638">
+              <caret line="36" column="66" selection-start-line="36" selection-start-column="66" selection-end-line="37" selection-end-column="136" />
             </state>
           </provider>
         </entry>
@@ -141,24 +167,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-75">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#340#341#0" expanded="true" />
-                <element signature="e#362#363#0" expanded="true" />
-                <element signature="e#746#747#0" expanded="true" />
-                <element signature="e#790#791#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/operators/IncrementalProcess.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="31" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="31" />
+            <state relative-caret-position="792">
+              <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -167,34 +177,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexContract.java">
+        <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/operators/LineStorage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/operators/BatchProcess.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/Kwic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+            <state relative-caret-position="682">
+              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -216,6 +202,7 @@
     <findStrings>
       <find>Button</find>
       <find>coogle</find>
+      <find>len</find>
     </findStrings>
     <replaceStrings>
       <replace>,</replace>
@@ -251,12 +238,18 @@
         <option value="$PROJECT_DIR$/src/edu/utdallas/wxz180008/data/SchemaRepository.java" />
         <option value="$PROJECT_DIR$/res/filters.properties" />
         <option value="$PROJECT_DIR$/src/edu/utdallas/wxz180008/util/StopWordsDictionary.java" />
-        <option value="$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexContract.java" />
-        <option value="$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexView.java" />
-        <option value="$PROJECT_DIR$/src/edu/utdallas/wxz180008/Kwic.java" />
-        <option value="$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexPresenter.java" />
-        <option value="$PROJECT_DIR$/src/edu/utdallas/wxz180008/data/CoogleRepository.java" />
         <option value="$PROJECT_DIR$/src/edu/utdallas/wxz180008/models/Sentence.java" />
+        <option value="$PROJECT_DIR$/src/edu/utdallas/wxz180008/util/CassandraHelper.java" />
+        <option value="$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexPresenter.java" />
+        <option value="$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexContract.java" />
+        <option value="$PROJECT_DIR$/src/edu/utdallas/wxz180008/operators/LineStorage.java" />
+        <option value="$PROJECT_DIR$/src/edu/utdallas/wxz180008/operators/Alphabetizer.java" />
+        <option value="$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexView.java" />
+        <option value="$PROJECT_DIR$/src/edu/utdallas/wxz180008/util/ConfigHelper.java" />
+        <option value="$PROJECT_DIR$/src/edu/utdallas/wxz180008/Kwic.java" />
+        <option value="$PROJECT_DIR$/res/cassandra.properties" />
+        <option value="$PROJECT_DIR$/res/config.properties" />
+        <option value="$PROJECT_DIR$/src/edu/utdallas/wxz180008/data/CoogleRepository.java" />
         <option value="$PROJECT_DIR$/src/edu/utdallas/wxz180008/operators/CircularShifter.java" />
       </list>
     </option>
@@ -268,7 +261,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -279,8 +272,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -316,6 +307,13 @@
               <item name="kwic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="wxz180008" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kwic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kwic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="wxz180008" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -324,13 +322,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="wxz180008" type="462c0819:PsiDirectoryNode" />
               <item name="operators" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kwic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kwic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="wxz180008" type="462c0819:PsiDirectoryNode" />
-              <item name="testpanel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kwic" type="b2602c69:ProjectViewProjectNode" />
@@ -347,13 +338,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541109887195" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543297370611" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -371,7 +364,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Kwic">
+  <component name="RunManager" selected="Application.ContainerApplet">
     <configuration name="TestPanelView" type="Applet" factoryName="Applet" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.utdallas.wxz180008.testpanel.TestPanelView" />
       <module name="kwic" />
@@ -436,7 +429,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541101946652</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="connect to cassandra">
+      <created>1541110065880</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1541110065880</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -449,10 +449,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498452" visible="true" weight="0.18230277" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498452" visible="true" weight="0.21002132" />
       <window_info id="Structure" order="1" sideWeight="0.5007728" side_tool="true" weight="0.18230277" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -460,16 +460,16 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.24186552" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4989339" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.329718" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.39154014" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.329718" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.29934925" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5010661" side_tool="true" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.5368764" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49946696" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -486,7 +486,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="import cassandra dependency" />
     <MESSAGE value="add repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="add repository" />
+    <MESSAGE value="connect to cassandra" />
+    <option name="LAST_COMMIT_MESSAGE" value="connect to cassandra" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/ControlPanel.java" />
@@ -509,9 +510,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/operators/BaseOperator.java" />
-    <entry file="file://$PROJECT_DIR$/.idea/artifacts/kwic_jar.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/kwic.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -523,31 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/operators/LineStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/data/CassandraConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -565,55 +538,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/data_2018-10-31 13%3A16%3A47.178715.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-462" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/filters.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/util/StopWordsDictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#156#157#0" expanded="true" />
-            <element signature="e#184#185#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/data_2018-10-31 13%3A16%3A47.178715.csv" />
     <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/testpanel/TestPanelPresenter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
           <caret line="65" column="1" lean-forward="true" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/operators/IncrementalProcess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -621,9 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="7" column="25" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -638,63 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="34" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexContract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/data/CoogleRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="38" column="39" lean-forward="true" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/Kwic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="63" column="48" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -702,6 +574,90 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/operators/IncrementalProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/artifacts/kwic_jar.xml" />
+    <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/util/CassandraHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/util/ConfigHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/Kwic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/filters.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="189" lean-forward="true" selection-start-column="7" selection-end-column="189" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/cassandra.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/util/StopWordsDictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/data/CassandraConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1606">
+          <caret line="95" selection-start-line="95" selection-end-line="104" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -710,8 +666,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/operators/Alphabetizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="31" />
+        <state relative-caret-position="770">
+          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -720,11 +676,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/operators/CircularShifter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+        <state relative-caret-position="638">
+          <caret line="36" column="66" selection-start-line="36" selection-start-column="66" selection-end-line="37" selection-end-column="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/autoindex/AutoIndexView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/operators/LineStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/utdallas/wxz180008/data/CoogleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -733,7 +713,12 @@
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor />
+          <artifact-editor>
+            <show-content>
+              <type id="artifact" />
+              <type id="library" />
+            </show-content>
+          </artifact-editor>
           <last-edited>kwic:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">

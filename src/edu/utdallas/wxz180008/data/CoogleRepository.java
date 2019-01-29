@@ -1,9 +1,12 @@
 package edu.utdallas.wxz180008.data;
 
+import com.datastax.driver.core.BoundStatement;
+import com.datastax.driver.core.PreparedStatement;
 import com.datastax.driver.core.Session;
 import edu.utdallas.wxz180008.models.Sentence;
 
 import java.util.List;
+import java.util.UUID;
 
 public class CoogleRepository {
     private static final String TABLE_NAME = "indices";
@@ -21,21 +24,23 @@ public class CoogleRepository {
      */
     public void insertSentencesBatch(List<Sentence> sentences) {
         for (Sentence sentence : sentences) {
-            insertSentence(sentence);
+            try {
+                insertSentence(sentence);
+            }
+            catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
     public void insertSentence(Sentence sentence) {
-        StringBuilder sb = new StringBuilder();
-        sb.append("INSERT INTO ").append(TABLE_NAME)
-                .append("(idx, clicks, description, title, url) ")
-                .append("VALUES ('")
-                .append(sentence.getOriginal()).append("', ")
-                .append(0).append(", '")
-                .append(sentence.getDescription()).append("', '")
-                .append(sentence.getTitle()).append("', '")
-                .append(sentence.getUrl()).append("');");
+        PreparedStatement statement = session.prepare(
+                "INSERT INTO " + TABLE_NAME + " (dupid, idx, clicks, description, title, url) " +
+                        "VALUES (?, ?, ?, ? , ? , ?) IF NOT EXISTS;");
 
-        session.execute(sb.toString());
+        BoundStatement boundStatement = statement.bind(
+                sentence.getOriginal(), sentence.getOriginal(), 0, sentence.getDescription(), sentence.getTitle(), sentence.getUrl());
+
+        session.execute(boundStatement);
     }
 }

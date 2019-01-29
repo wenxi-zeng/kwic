@@ -1,7 +1,10 @@
 package edu.utdallas.wxz180008.autoindex;
 
 import edu.utdallas.wxz180008.models.Sentence;
+import edu.utdallas.wxz180008.operators.Alphabetizer;
 import edu.utdallas.wxz180008.operators.BatchProcess;
+import edu.utdallas.wxz180008.operators.CircularShifter;
+import edu.utdallas.wxz180008.operators.LineStorage;
 
 import java.io.IOException;
 import java.util.List;
@@ -36,6 +39,13 @@ public class AutoIndexView implements AutoIndexContract.View {
     @Override
     public void init() {
         new AutoIndexPresenter(this);
+    }
+
+    @Override
+    public void reset() {
+        LineStorage.deleteInstance();
+        CircularShifter.deleteInstance();
+        Alphabetizer.deleteInstance();
     }
 
     @Override
